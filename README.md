@@ -24,11 +24,13 @@ https://bw-party-planner.herokuapp.com/api/auth/register
 
 https://bw-party-planner.herokuapp.com/api/party
 >{
->guests: integer,
->theme: string,
->date: string,
->budget: integer,
->user_id(logged in user): >integer
+>"name": string
+>"guests": integer, 
+>"theme": string, 
+>"date": string,
+>"budget": integer,
+>"user_id": 1,
+>"id": number,
 >}
 
 //Lists out all the lists in this specific party -- GET
