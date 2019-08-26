@@ -29,8 +29,8 @@ https://bw-party-planner.herokuapp.com/api/party
 >"theme": string, 
 >"date": string,
 >"budget": integer,
->"user_id": 1,
->"id": number,
+>"user_id": integer,
+>"id": integer,
 >}
 
 //Lists out all the lists in this specific party -- GET
