@@ -11,7 +11,9 @@ https://bw-party-planner.herokuapp.com/api/auth/login
 >email:'',
 >password:''
 >}
+
 //Register endpoint -- POST
+
 https://bw-party-planner.herokuapp.com/api/auth/register
 >{
 >email:'',
