@@ -68,12 +68,13 @@ router.post("/login", (req, res) => {
         const token = generateToken(user);
 
         res.status(200).json({
+          id : 'hello'
           message: `Welcome ${
             user.email
           }!, here\'s your token...`,
           token,
           roles: token.roles,
-          user_id : user.user_id
+          
         });
       } else {
         res.status(401).json({ message: "You shall not pass!" });
