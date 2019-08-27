@@ -59,7 +59,7 @@ router.get("/login", checkToken, async (req, res) => {
 });
 
 router.post("/login", (req, res) => {
-  let { email, password, user_id } = req.body;
+  let { email, password } = req.body;
 
   Users.findBy({ email })
     .first()
@@ -73,7 +73,7 @@ router.post("/login", (req, res) => {
           }!, we have been waiting for you here\'s your token...`,
           token,
           roles: token.roles,
-          user_id : user_id
+          user_id : user.user_id
         });
       } else {
         res.status(401).json({ message: "You shall not pass!" });
