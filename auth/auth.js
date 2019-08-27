@@ -68,7 +68,7 @@ router.post("/login", (req, res) => {
         const token = generateToken(user);
 
         res.status(200).json({
-          id : 'hello',
+          id : user,
           message: `Welcome ${
             user.email
           }!, here\'s your token...`,
