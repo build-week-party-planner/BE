@@ -70,7 +70,7 @@ router.post("/login", (req, res) => {
         res.status(200).json({
           message: `Welcome ${
             user.email
-          }!, we have been waiting for you here\'s your token...`,
+          }!, here\'s your token...`,
           token,
           roles: token.roles,
           user_id : user.user_id
